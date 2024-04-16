@@ -12,7 +12,7 @@ from tkinter import simpledialog
 
 def user_time(): # formats time
     current_time = datetime.datetime.now()
-    formatted_time = current_time.strftime("%Y-%m-%d %I:%M %p")
+    formatted_time = current_time.strftime("\n" + "%Y-%m-%d %I:%M %p")
     return formatted_time
 
 def user_notes(): # takes in user input, returns it so that it may be used in the add_log func
